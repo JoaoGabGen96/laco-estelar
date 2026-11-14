@@ -3768,7 +3768,7 @@ function renderPhones(){
   if(PH.room&&qrRoomShown!==PH.room+location.href){qrRoomShown=PH.room+location.href;$('qr1').innerHTML=qrSvg(phUrl(1));$('qr2').innerHTML=qrSvg(phUrl(2))}
   $('qs1').textContent=PH.conns[1]?'✅ conectado':'aguardando…';$('qs2').textContent=PH.conns[2]?'✅ conectado':'aguardando…';
   const st=$('phStatus');
-  if(PH.status==='erro'||location.protocol==='file:')st.innerHTML='⚠️ O modo celular não funciona por aqui. Abra o jogo pelo link do site no notebook/TV.';
+  if(PH.status==='erro'||location.protocol==='file:')st.innerHTML='⚠️ O modo celular não funciona nesta página. No notebook/TV, abra: <b>joaogabgen96.github.io/laco-estelar</b>';
   else if(PH.status==='pronto')st.innerHTML=`Código da sala: <span class="roomcode">${PH.room}</span><br>Os celulares podem usar Wi‑Fi ou 4G. Se a tela do celular apagar, é só abrir de novo.`;
   else st.textContent='Ligando o modo celular…';
 }
